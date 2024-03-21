@@ -21,14 +21,10 @@ public class EmployeeTestInteractive {
 		// 利用 Factory Pattern (工廠模式) 只會建立一次
 		EmployeeDAOFactory factory = new EmployeeDAOFactory();
 
-		// 每次建立物件都會增加記憶體位址
-		// EmployeeDAO employeeDAO = new EmployeeDAOMemoryImpl();
-
 		EmployeeDAO dao = factory.createEmployeeDAO();
 
 		boolean timeToQuit = false;
 
-		//
 		BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
 
 		do {
