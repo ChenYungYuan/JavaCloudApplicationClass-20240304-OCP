@@ -40,6 +40,7 @@ public class StudentDaoTestForJava17 {
 		
 		System.out.println("\n\n[C]reate | [R]ead | [U]pdate | [D]elete | [L]ist | [Q]uit: ");
 		action = in.readLine();
+		
 		if ((action.length() == 0) || action.isBlank() || action.toUpperCase().charAt(0) == 'Q') {
 			return true;
 		}
